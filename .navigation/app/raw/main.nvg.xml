@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigationModel
+  ns = "http://schemas.android.com?import=com.android.tools.idea.editors.navigation.model.*">
+  <locations  
+    class = "java.util.ArrayList">
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "ru.alexandrpokh.cheltanks.homePackage.HomeNews"/>
+      <point      
+        x = "-89"      
+        y = "102"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "ru.alexandrpokh.cheltanks.activity.MainActivity"/>
+      <point      
+        x = "1378"      
+        y = "208"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "ru.alexandrpokh.cheltanks.homePackage.HomeGallerycard"/>
+      <point      
+        x = "532"      
+        y = "704"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "ru.alexandrpokh.cheltanks.teamPackage.SingleItemView"/>
+      <point      
+        x = "419"      
+        y = "122"/>
+    </statePointEntry>
+  </locations>
+</navigationModel>

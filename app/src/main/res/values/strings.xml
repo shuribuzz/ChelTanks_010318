@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">TANKS</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">News</string>
+    <string name="nav_team">Team</string>
+    <string name="nav_shed_games">Schedule</string>
+    <string name="nav_live">Live</string>
+    <string name="nav_store">Shop</string>
+    <string name="nav_contacts">Contacts</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>News</item>
+        <item>Team</item>
+        <item>Schedule</item>
+        <item>Live</item>
+        <item>Shop</item>
+        <item>Contacts</item>
+
+    </string-array>
+    <string name="title_activity_single_newscard">SingleNewscard</string>
+
+</resources>

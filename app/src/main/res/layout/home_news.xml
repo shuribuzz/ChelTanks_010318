@@ -1,0 +1,1083 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+
+<android.support.v7.widget.Toolbar
+    android:id="@+id/toolbarnews"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary"
+    app:navigationIcon="?attr/homeAsUpIndicator"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    <TextView
+        android:text=""
+        android:textSize="20dp"
+        android:id="@+id/titlename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="8dp"
+        android:textColor="@color/colorKhakiTank" />
+
+</android.support.v7.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarnews"
+        android:fillViewport="true"
+        android:id="@+id/scrollView2">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="360dp"
+                android:layout_height="240dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <ImageView
+                android:id="@+id/logoleft"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/photo"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp" />
+
+            <ImageView
+                android:id="@+id/logoright"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/photo"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:linksClickable="false"
+                android:textColor="@color/black"
+                android:textSize="36dp"
+                android:textStyle="bold"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp"
+                android:layout_alignTop="@+id/logoleft"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="28dp" />
+
+            <TextView
+                android:id="@+id/paragraph1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:linksClickable="false"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_below="@+id/logoleft"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="8dp"
+                android:gravity="fill"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/paragraph2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:linksClickable="false"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_below="@+id/paragraph1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:gravity="fill"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/paragraph3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:linksClickable="false"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_below="@+id/paragraph2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:gravity="fill"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/paragraph4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:linksClickable="false"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_below="@+id/paragraph3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:gravity="fill"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/paragraph5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:linksClickable="false"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_below="@+id/paragraph4"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:gravity="fill"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/paragraph6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:linksClickable="false"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_below="@+id/paragraph5"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:gravity="fill"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/paragraph7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:linksClickable="false"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_below="@+id/paragraph6"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:gravity="fill"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/paragraph8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:linksClickable="false"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_below="@+id/paragraph7"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:gravity="fill"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/paragraph9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:linksClickable="false"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_below="@+id/paragraph8"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:gravity="fill"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/paragraph10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:linksClickable="false"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_below="@+id/paragraph9"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:gravity="fill"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/paragraph11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:linksClickable="false"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_below="@+id/paragraph10"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:gravity="fill"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/paragraph12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:linksClickable="false"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_below="@+id/paragraph11"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:gravity="fill"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/paragraph13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:linksClickable="false"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_below="@+id/paragraph12"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:gravity="fill"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/paragraph14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:linksClickable="false"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_below="@+id/paragraph13"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:gravity="fill"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/paragraph15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:linksClickable="false"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_below="@+id/paragraph14"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:gravity="fill"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/paragraph16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:linksClickable="false"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_below="@+id/paragraph15"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:gravity="fill"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/paragraph17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:linksClickable="false"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_below="@+id/paragraph16"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:gravity="fill"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp" />
+            <TextView
+                android:id="@+id/paragraph18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:linksClickable="false"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_below="@+id/paragraph17"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:gravity="fill"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp" />
+            <TextView
+                android:id="@+id/paragraph19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:linksClickable="false"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_below="@+id/paragraph18"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:gravity="fill"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/paragraph20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:linksClickable="false"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_below="@+id/paragraph19"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:gravity="fill"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="РЕЗУЛЬТАТ ИГРЫ"
+                android:id="@+id/tvResultGame"
+                android:layout_below="@+id/paragraph20"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:paddingTop="16dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvResultGame"
+                android:id="@+id/tableScore"
+                android:background="#cccccc"
+                android:baselineAligned="false">
+
+            <!-- tableRow0 -->
+            <TableRow
+                android:id="@+id/tableRow0"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="---"
+                    android:id="@+id/txtHeadScore0"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:id="@+id/txtHeadScore1"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:id="@+id/txtHeadScore2"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:id="@+id/txtHeadScore3"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:id="@+id/txtHeadScore4"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Итог"
+                    android:id="@+id/txtHeadTotal"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+                <!-- tableRow1 -->
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Танки"
+                        android:id="@+id/txtBodyScore0"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:paddingLeft="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:id="@+id/txtBodyScore1"
+                        android:layout_weight="1"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:id="@+id/txtBodyScore2"
+                        android:layout_weight="1"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:id="@+id/txtBodyScore3"
+                        android:layout_weight="1"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:id="@+id/txtBodyScore4"
+                        android:layout_weight="1"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00"
+                        android:id="@+id/txtBodyScore5"
+                        android:layout_weight="1"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+                <!-- tableRow2 -->
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Молнии"
+                        android:id="@+id/txtBodyScore6"
+                        android:layout_weight="1"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:paddingLeft="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:id="@+id/txtBodyScore7"
+                        android:layout_weight="1"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:id="@+id/txtBodyScore8"
+                        android:layout_weight="1"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:id="@+id/txtBodyScore9"
+                        android:layout_weight="1"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:id="@+id/txtBodyScore10"
+                        android:layout_weight="1"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00"
+                        android:id="@+id/txtBodyScore11"
+                        android:layout_weight="1"
+                        android:textColor="@color/black" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ХОД ИГРЫ"
+                android:id="@+id/tvCourseGame"
+                android:layout_below="@+id/tableScore"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:paddingTop="16dp"
+                android:paddingLeft="8dp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tableGame"
+                android:layout_below="@+id/tvCourseGame">
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#cccccc">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame1"
+                        android:paddingLeft="8dp"
+                        android:layout_weight="0"
+                        android:textSize="16dp"
+                        android:textIsSelectable="false"
+                        android:gravity="top|left" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame2"
+                        android:layout_weight="0"
+                        android:paddingLeft="8dp"
+                        android:textSize="16dp"
+                        android:textIsSelectable="false"
+                        android:gravity="top|left" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame3"
+                        android:layout_weight="0"
+                        android:paddingLeft="8dp"
+                        android:textSize="16dp"
+                        android:textIsSelectable="false"
+                        android:gravity="top|left" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame4"
+                        android:layout_weight="1"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textSize="16dp"
+                        android:gravity="top|left" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame5"
+                        android:paddingLeft="8dp"
+                        android:textSize="16dp"
+                        android:gravity="top|left"
+                        android:layout_weight="0" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame6"
+                        android:paddingLeft="8dp"
+                        android:textSize="16dp"
+                        android:gravity="top|left"
+                        android:layout_weight="0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame7"
+                        android:paddingLeft="8dp"
+                        android:textSize="16dp"
+                        android:gravity="top|left"
+                        android:layout_weight="0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame8"
+                        android:gravity="top|left"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textSize="16dp"
+                        android:layout_weight="1" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#cccccc">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame9"
+                        android:paddingLeft="8dp"
+                        android:textSize="16dp"
+                        android:gravity="top|left"
+                        android:layout_weight="0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame10"
+                        android:paddingLeft="8dp"
+                        android:textSize="16dp"
+                        android:gravity="top|left"
+                        android:layout_weight="0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame11"
+                        android:paddingLeft="8dp"
+                        android:textSize="16dp"
+                        android:gravity="top|left"
+                        android:layout_weight="0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame12"
+                        android:gravity="top|left"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textSize="16dp"
+                        android:layout_weight="1" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame13"
+                        android:paddingLeft="8dp"
+                        android:textSize="16dp"
+                        android:gravity="top|left"
+                        android:layout_weight="0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame14"
+                        android:paddingLeft="8dp"
+                        android:textSize="16dp"
+                        android:gravity="top|left"
+                        android:layout_weight="0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame15"
+                        android:paddingLeft="8dp"
+                        android:textSize="16dp"
+                        android:gravity="top|left"
+                        android:layout_weight="0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame16"
+                        android:gravity="top|left"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textSize="16dp"
+                        android:layout_weight="1" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#cccccc">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame17"
+                        android:paddingLeft="8dp"
+                        android:textSize="16dp"
+                        android:gravity="top|left"
+                        android:layout_weight="0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame18"
+                        android:paddingLeft="8dp"
+                        android:textSize="16dp"
+                        android:gravity="top|left"
+                        android:layout_weight="0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame19"
+                        android:paddingLeft="8dp"
+                        android:textSize="16dp"
+                        android:gravity="top|left"
+                        android:layout_weight="0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame20"
+                        android:gravity="top|left"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textSize="16dp"
+                        android:layout_weight="1" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame21"
+                        android:paddingLeft="8dp"
+                        android:textSize="16dp"
+                        android:gravity="top|left"
+                        android:layout_weight="0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame22"
+                        android:paddingLeft="8dp"
+                        android:textSize="16dp"
+                        android:gravity="top|left"
+                        android:layout_weight="0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame23"
+                        android:paddingLeft="8dp"
+                        android:textSize="16dp"
+                        android:gravity="top|left"
+                        android:layout_weight="0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame24"
+                        android:gravity="top|left"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textSize="16dp"
+                        android:layout_weight="1" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#cccccc">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame25"
+                        android:paddingLeft="8dp"
+                        android:textSize="16dp"
+                        android:gravity="top|left"
+                        android:layout_weight="0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame26"
+                        android:paddingLeft="8dp"
+                        android:textSize="16dp"
+                        android:gravity="top|left"
+                        android:layout_weight="0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame27"
+                        android:paddingLeft="8dp"
+                        android:textSize="16dp"
+                        android:gravity="top|left"
+                        android:layout_weight="0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame28"
+                        android:gravity="top|left"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textSize="16dp"
+                        android:layout_weight="1" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame29"
+                        android:paddingLeft="8dp"
+                        android:textSize="16dp"
+                        android:gravity="top|left"
+                        android:layout_weight="0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame30"
+                        android:paddingLeft="8dp"
+                        android:textSize="16dp"
+                        android:gravity="top|left"
+                        android:layout_weight="0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame31"
+                        android:paddingLeft="8dp"
+                        android:textSize="16dp"
+                        android:gravity="top|left"
+                        android:layout_weight="0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame32"
+                        android:gravity="top|left"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textSize="16dp"
+                        android:layout_weight="1" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame33"
+                        android:paddingLeft="8dp"
+                        android:textSize="16dp"
+                        android:gravity="top|left"
+                        android:layout_weight="0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame34"
+                        android:paddingLeft="8dp"
+                        android:textSize="16dp"
+                        android:gravity="top|left"
+                        android:layout_weight="0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame35"
+                        android:paddingLeft="8dp"
+                        android:textSize="16dp"
+                        android:gravity="top|left"
+                        android:layout_weight="0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame36"
+                        android:gravity="top|left"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textSize="16dp"
+                        android:layout_weight="1" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#cccccc">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame37"
+                        android:paddingLeft="8dp"
+                        android:textSize="16dp"
+                        android:gravity="top|left"
+                        android:layout_weight="0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame38"
+                        android:paddingLeft="8dp"
+                        android:textSize="16dp"
+                        android:gravity="top|left"
+                        android:layout_weight="0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame39"
+                        android:paddingLeft="8dp"
+                        android:textSize="16dp"
+                        android:gravity="top|left"
+                        android:layout_weight="0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGame40"
+                        android:gravity="top|left"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textSize="16dp"
+                        android:layout_weight="1" />
+
+                </TableRow>
+            </TableLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

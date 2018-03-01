@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#151515</color>
+    <color name="colorPrimaryDark">#0e0e0e</color>
+    <color name="colorAccent">#d4b46b</color>
+    <color name="colorDarkkhakiTank">#d4b46b</color>
+    <color name="colorBlackTank">#151515</color>
+    <color name="colorWhiteTank">#FFFFFF</color>
+    <color name="colorKhakiTank">#fced8b</color>
+    <color name="foreground_material_light">#000000</color>
+    <color name="black">#000000</color>
+    <color name="primary_text_material_light">#d4b46b</color>
+    <color name="primary_text_light">#d4b46b</color>
+    <color name="secondary_text_material_light">#d4b46b</color>
+    <color name="secondary_text_material_dark">#d4b46b</color>
+    <color name="divider">#e5e5e5</color>
+</resources>
